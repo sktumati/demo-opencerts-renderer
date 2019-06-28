@@ -1,13 +1,2796 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`NestedComponent renders primitives 1`] = `"Hello"`;
+
+exports[`NestedComponent renders primitives 2`] = `"1337"`;
+
+exports[`NestedComponent renders primitives 3`] = `"false"`;
+
+exports[`NestedComponent works 1`] = `
+<div
+  style={
+    Object {
+      "borderColor": "#d5effc",
+      "borderStyle": "solid",
+      "borderWidth": 1,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "borderColor": "#d5effc",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+      }
+    }
+  >
+    <div
+      className="p-4"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#d5effc",
+        }
+      }
+    >
+      0
+    </div>
+    <div
+      className="p-4 text-truncate "
+    >
+      <div
+        style={
+          Object {
+            "borderColor": "#d5effc",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            id
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            0001
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            type
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            donut
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            name
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            Cake
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            ppu
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            0.55
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            batters
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            <div
+              style={
+                Object {
+                  "borderColor": "#d5effc",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  batter
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        0
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        <div
+                          style={
+                            Object {
+                              "borderColor": "#d5effc",
+                              "borderStyle": "solid",
+                              "borderWidth": 1,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              id
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              1001
+                            </div>
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              type
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              Regular
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        1
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        <div
+                          style={
+                            Object {
+                              "borderColor": "#d5effc",
+                              "borderStyle": "solid",
+                              "borderWidth": 1,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              id
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              1002
+                            </div>
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              type
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              Chocolate
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        2
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        <div
+                          style={
+                            Object {
+                              "borderColor": "#d5effc",
+                              "borderStyle": "solid",
+                              "borderWidth": 1,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              id
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              1003
+                            </div>
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              type
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              Blueberry
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        3
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        <div
+                          style={
+                            Object {
+                              "borderColor": "#d5effc",
+                              "borderStyle": "solid",
+                              "borderWidth": 1,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              id
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              1004
+                            </div>
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              type
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              Devil's Food
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            topping
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            <div
+              style={
+                Object {
+                  "borderColor": "#d5effc",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  0
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5001
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        None
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  1
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5002
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Glazed
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  2
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5005
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Sugar
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  3
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5007
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Powdered Sugar
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  4
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5006
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Chocolate with Sprinkles
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  5
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5003
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Chocolate
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  6
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5004
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Maple
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderColor": "#d5effc",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+      }
+    }
+  >
+    <div
+      className="p-4"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#d5effc",
+        }
+      }
+    >
+      1
+    </div>
+    <div
+      className="p-4 text-truncate "
+    >
+      <div
+        style={
+          Object {
+            "borderColor": "#d5effc",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            id
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            0002
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            type
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            donut
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            name
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            Raised
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            ppu
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            0.55
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            batters
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            <div
+              style={
+                Object {
+                  "borderColor": "#d5effc",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  batter
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        0
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        <div
+                          style={
+                            Object {
+                              "borderColor": "#d5effc",
+                              "borderStyle": "solid",
+                              "borderWidth": 1,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              id
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              1001
+                            </div>
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              type
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              Regular
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            topping
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            <div
+              style={
+                Object {
+                  "borderColor": "#d5effc",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  0
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5001
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        None
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  1
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5002
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Glazed
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  2
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5005
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Sugar
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  3
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5003
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Chocolate
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  4
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5004
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Maple
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderColor": "#d5effc",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+      }
+    }
+  >
+    <div
+      className="p-4"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#d5effc",
+        }
+      }
+    >
+      2
+    </div>
+    <div
+      className="p-4 text-truncate "
+    >
+      <div
+        style={
+          Object {
+            "borderColor": "#d5effc",
+            "borderStyle": "solid",
+            "borderWidth": 1,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            id
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            0003
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            type
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            donut
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            name
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            Old Fashioned
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            ppu
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            0.55
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            batters
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            <div
+              style={
+                Object {
+                  "borderColor": "#d5effc",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  batter
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        0
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        <div
+                          style={
+                            Object {
+                              "borderColor": "#d5effc",
+                              "borderStyle": "solid",
+                              "borderWidth": 1,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              id
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              1001
+                            </div>
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              type
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              Regular
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        1
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        <div
+                          style={
+                            Object {
+                              "borderColor": "#d5effc",
+                              "borderStyle": "solid",
+                              "borderWidth": 1,
+                            }
+                          }
+                        >
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              id
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              1002
+                            </div>
+                          </div>
+                          <div
+                            style={
+                              Object {
+                                "borderColor": "#d5effc",
+                                "borderStyle": "solid",
+                                "borderWidth": 1,
+                              }
+                            }
+                          >
+                            <div
+                              className="p-4"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "backgroundColor": "#d5effc",
+                                }
+                              }
+                            >
+                              type
+                            </div>
+                            <div
+                              className="p-4 text-truncate "
+                            >
+                              Chocolate
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "borderColor": "#d5effc",
+              "borderStyle": "solid",
+              "borderWidth": 1,
+            }
+          }
+        >
+          <div
+            className="p-4"
+            onClick={[Function]}
+            style={
+              Object {
+                "backgroundColor": "#d5effc",
+              }
+            }
+          >
+            topping
+          </div>
+          <div
+            className="p-4 text-truncate "
+          >
+            <div
+              style={
+                Object {
+                  "borderColor": "#d5effc",
+                  "borderStyle": "solid",
+                  "borderWidth": 1,
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  0
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5001
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        None
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  1
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5002
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Glazed
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  2
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5003
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Chocolate
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={
+                  Object {
+                    "borderColor": "#d5effc",
+                    "borderStyle": "solid",
+                    "borderWidth": 1,
+                  }
+                }
+              >
+                <div
+                  className="p-4"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#d5effc",
+                    }
+                  }
+                >
+                  3
+                </div>
+                <div
+                  className="p-4 text-truncate "
+                >
+                  <div
+                    style={
+                      Object {
+                        "borderColor": "#d5effc",
+                        "borderStyle": "solid",
+                        "borderWidth": 1,
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        id
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        5004
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "borderColor": "#d5effc",
+                          "borderStyle": "solid",
+                          "borderWidth": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="p-4"
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "backgroundColor": "#d5effc",
+                          }
+                        }
+                      >
+                        type
+                      </div>
+                      <div
+                        className="p-4 text-truncate "
+                      >
+                        Maple
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`default template matches snapshot 1`] = `
 <div
   className="container"
 >
-  <pre>
-    {
-  "foo": "bar"
-}
-  </pre>
+  <div
+    style={
+      Object {
+        "borderColor": "#d5effc",
+        "borderStyle": "solid",
+        "borderWidth": 1,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "borderColor": "#d5effc",
+          "borderStyle": "solid",
+          "borderWidth": 1,
+        }
+      }
+    >
+      <div
+        className="p-4"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#d5effc",
+          }
+        }
+      >
+        foo
+      </div>
+      <div
+        className="p-4 text-truncate "
+      >
+        bar
+      </div>
+    </div>
+  </div>
 </div>
 `;
