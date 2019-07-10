@@ -10,6 +10,7 @@ class DocumentViewerContainer extends Component {
     super(props);
 
     this.handleDocumentChange = this.handleDocumentChange.bind(this);
+    this.handleTextFieldChange = this.handleTextFieldChange.bind(this);
     this.selectTemplateTab = this.selectTemplateTab.bind(this);
     this.updateParentHeight = this.updateParentHeight.bind(this);
     this.updateParentTemplateTabs = this.updateParentTemplateTabs.bind(this);
@@ -44,12 +45,33 @@ class DocumentViewerContainer extends Component {
     }
   }
 
-  selectTemplateTab(tabIndex) {
+  async selectTemplateTab(tabIndex) {
+    if (inIframe()) {
+      const { parentFrameConnection } = this.state;
+      const parent = await parentFrameConnection;
+      if (parent.selectTemplateTab) {
+        await parent.selectTemplateTab(tabIndex);
+      }
+    }
     this.setState({ tabIndex });
   }
 
   handleDocumentChange(document) {
     this.setState({ document });
+  }
+
+  handleTextFieldChange(e) {
+    const fieldContents = JSON.parse(e.target.value);
+    trace(fieldContents);
+    const validated = validateSchema(fieldContents);
+    if (!validated) {
+      throw new Error(
+        "Certificate string does not conform to OpenCerts schema"
+      );
+    }
+    const verified = verifySignature(fieldContents);
+    trace(`Certificate verification: ${verified}`);
+    this.obfuscateDocument(fieldContents);
   }
 
   componentDidUpdate() {
@@ -80,7 +102,13 @@ class DocumentViewerContainer extends Component {
 
   render() {
     if (!this.state.document) {
-      return null;
+      return (
+        <input
+          id="certificateContentsString"
+          type="hidden"
+          onChange={this.handleTextFieldChange}
+        />
+      );
     }
     return (
       <DocumentViewer
