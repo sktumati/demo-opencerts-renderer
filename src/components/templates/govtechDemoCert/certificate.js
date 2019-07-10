@@ -23,7 +23,8 @@ const Template = ({ document }) => (
     >
       <div className="my-5 m-lg-5 text-center">
         <img
-          src="./common/opencertslogo.svg"
+          src={require("./common/opencertslogo.svg")}
+          alt="OpenCerts Logo"
           style={{ width: "60%", height: "auto", maxWidth: "1000px" }}
         />
       </div>
@@ -62,7 +63,8 @@ const Template = ({ document }) => (
           <img
             className="w-100"
             style={{ width: "100%", height: "auto", minWidth: "100px" }}
-            src="./common/GOVTECH_logo.png"
+            src={require("./common/GOVTECH_logo.png")}
+            alt="Govtech Logo"
           />
         </div>
         <div className="col" />

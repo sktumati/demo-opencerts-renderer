@@ -192,7 +192,8 @@ class Template extends Component {
                   width: "100%",
                   height: "auto"
                 }}
-                src="./common/GOVTECH_logo.png"
+                src={require("./common/GOVTECH_logo.png")}
+                alt="Govtech Logo"
               />
             </div>
             <div className="col" />
