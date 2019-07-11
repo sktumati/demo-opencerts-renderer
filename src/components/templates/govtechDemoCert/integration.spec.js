@@ -17,17 +17,20 @@ const validateTextContent = async (t, component, texts) =>
   );
 
 test("Govtech Demo certificate is rendered correctly", async t => {
-  // Inject javascript and execute window.opencerts.renderDocument
+  // Inject javascript and execute window.openAttestation.renderDocument
   const certificateContent = getData(
     JSON.parse(readFileSync(join(__dirname, Certificate)).toString())
   );
-  await t.eval(() => window.opencerts.renderDocument(certificateContent), {
-    dependencies: { certificateContent }
-  });
+  await t.eval(
+    () => window.openAttestation.renderDocument(certificateContent),
+    {
+      dependencies: { certificateContent }
+    }
+  );
 
-  // Check content of window.opencerts.templates
+  // Check content of window.openAttestation.templates
   await t.wait(500);
-  const templates = await t.eval(() => window.opencerts.getTemplates());
+  const templates = await t.eval(() => window.openAttestation.getTemplates());
   await t
     .expect(templates)
     .eql([
@@ -45,8 +48,8 @@ test("Govtech Demo certificate is rendered correctly", async t => {
     "certification through training administered by"
   ]);
 
-  // Navigate to next tab using window.opencerts.selectTemplateTab
-  await t.eval(() => window.opencerts.selectTemplateTab(1));
+  // Navigate to next tab using window.openAttestation.selectTemplateTab
+  await t.eval(() => window.openAttestation.selectTemplateTab(1));
 
   // Validate content of second tab
   await validateTextContent(t, RenderedCertificate, [
@@ -56,8 +59,8 @@ test("Govtech Demo certificate is rendered correctly", async t => {
     "53b75bbe"
   ]);
 
-  // Navigate to next tab using window.opencerts.selectTemplateTab
-  await t.eval(() => window.opencerts.selectTemplateTab(2));
+  // Navigate to next tab using window.openAttestation.selectTemplateTab
+  await t.eval(() => window.openAttestation.selectTemplateTab(2));
 
   // Validate content of third tab
   await t.wait(1000);
