@@ -4,7 +4,6 @@ import connectToParent from "penpal/lib/connectToParent";
 import DocumentViewer from "./documentViewer";
 import { documentTemplateTabs, inIframe } from "./utils";
 
-export const HEIGHT_OFFSET = 30; // Height offset to prevent double scrollbar in certain browsers
 class DocumentViewerContainer extends Component {
   constructor(props) {
     super(props);
@@ -33,13 +32,11 @@ class DocumentViewerContainer extends Component {
       const { parentFrameConnection } = this.state;
       const parent = await parentFrameConnection;
       if (parent.updateHeight)
-        await parent.updateHeight(
-          document.documentElement.offsetHeight + HEIGHT_OFFSET
-        );
+        await parent.updateHeight(document.documentElement.offsetHeight);
     }
   }
 
-  // Use postMessage to update iframe's parent on the selection of templates available for this document
+  // Use postMessage to update iframe's parent onw the selection of templates available for this document
   async updateParentTemplateTabs(templates) {
     if (inIframe()) {
       const { parentFrameConnection } = this.state;
