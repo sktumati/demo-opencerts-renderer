@@ -98,7 +98,6 @@ class DocumentViewerContainer extends Component {
   }
 
   render() {
-    console.log(styles);
     if (!this.state.document) {
       return null;
     }
