@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
 const SimplePrivacyFilterBanner = ({ toggleEditable }) => (
   <div id="banner-privacy-filter" className="screen-only">
@@ -23,7 +25,7 @@ const SimplePrivacyFilterBanner = ({ toggleEditable }) => (
         style={{ display: "inline-block" }}
         onClick={toggleEditable}
       >
-        <i className="far fa-edit" />
+        <FontAwesomeIcon icon={faEdit} cursor="pointer" />
       </div>
     </div>
   </div>

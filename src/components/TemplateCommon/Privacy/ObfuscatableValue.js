@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import css from "./obfuscatableValueStyles.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const ObfuscatableValue = ({ field, value, handleObfuscation, editable }) =>
   value ? (
@@ -13,7 +15,14 @@ const ObfuscatableValue = ({ field, value, handleObfuscation, editable }) =>
       style={{ display: "inline-block" }}
     >
       {value}{" "}
-      {editable && <i className={`fas fa-times ${css["remove-icon"]}`} />}
+      {editable && (
+        <FontAwesomeIcon
+          icon={faTimes}
+          cursor="pointer"
+          className={`${css["remove-icon"]}`}
+          style={{ color: "red" }}
+        />
+      )}
     </div>
   ) : null;
 

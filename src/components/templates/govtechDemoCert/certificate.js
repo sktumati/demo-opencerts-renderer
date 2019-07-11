@@ -3,7 +3,7 @@ import { format } from "date-fns";
 import { get } from "lodash";
 import React from "react";
 import { certificateBg } from "./common/backgrounds";
-import css from "./common/demoStyles.scss";
+import "./common/demoStyles.scss";
 
 const Template = ({ document }) => (
   <div
@@ -29,30 +29,28 @@ const Template = ({ document }) => (
         />
       </div>
       <div
-        className={`mb-4 mb-lg-5 d-flex justify-content-center ${css.body}`}
+        className="mb-4 mb-lg-5 d-flex justify-content-center cert-body"
         style={{ textAlign: "center" }}
       >
         <i>This is to certify that</i>
       </div>
-      <div
-        className={`mb-4 mb-lg-5 d-flex justify-content-center ${css.title}`}
-      >
+      <div className="mb-4 mb-lg-5 d-flex justify-content-center cert-title">
         <b>{document.recipient.name}</b>
       </div>
       <div
-        className={`mb-4 mb-lg-5 d-flex justify-content-center ${css.body}`}
+        className="mb-4 mb-lg-5 d-flex justify-content-center cert-body"
         style={{ textAlign: "center" }}
       >
         <i>has successfully completed the</i>
       </div>
       <div
-        className={`mb-4 mb-lg-5 d-flex justify-content-center ${css.title}`}
+        className="mb-4 mb-lg-5 d-flex justify-content-center cert-title"
         style={{ textAlign: "center" }}
       >
         OpenCerts Demo
       </div>
       <div
-        className={`mb-4 mb-lg-5 d-flex justify-content-center ${css.body}`}
+        className="mb-4 mb-lg-5 d-flex justify-content-center cert-body"
         style={{ textAlign: "center" }}
       >
         <i>certification through training administered by</i>
@@ -77,7 +75,7 @@ const Template = ({ document }) => (
           paddingTop: "5%"
         }}
       >
-        <div className={`col text-center ${css.transcript}`}>
+        <div className="col text-center transcript">
           <img
             style={{ width: "100%", height: "auto" }}
             src={get(document, "additionalData.certSignatories[0].signature")}
@@ -100,7 +98,7 @@ const Template = ({ document }) => (
         <div className="col" />
 
         <div
-          className={`d-flex flex-row-reverse col ${css.transcript}`}
+          className="d-flex flex-row-reverse col transcript"
           style={{
             paddingTop: "5%",
             paddingRight: "5%"

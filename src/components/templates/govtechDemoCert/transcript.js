@@ -5,7 +5,7 @@ import SimplePrivacyFilterBanner from "../../TemplateCommon/Privacy/SimplePrivac
 import ObfuscatableValue from "../../TemplateCommon/Privacy/ObfuscatableValue";
 import { formatDate } from "./common/functions";
 import { transcriptBg } from "./common/backgrounds";
-import css from "./common/demoStyles.scss";
+import "./common/demoStyles.scss";
 
 class Template extends Component {
   constructor(props) {
@@ -86,12 +86,12 @@ class Template extends Component {
             backgroundRepeat: "repeat"
           }}
         >
-          <div className={`row ${css.title}`} style={{ paddingLeft: "3%" }}>
+          <div className="row root cert-title" style={{ paddingLeft: "3%" }}>
             <b>{documentName}</b>
           </div>
 
           <div
-            className={`row ${css.transcript}`}
+            className="row transcript"
             style={{
               paddingTop: "3%",
               paddingLeft: "2%"
@@ -129,7 +129,7 @@ class Template extends Component {
             </div>
             <div className="col">
               <div className="row">
-                <div className="col">document ID</div>
+                <div className="col">DOCUMENT ID</div>
                 <div className="col">
                   :&nbsp;&nbsp;
                   {documentId}
@@ -164,10 +164,10 @@ class Template extends Component {
               className="row mb-4"
               style={{ paddingLeft: "3%", paddingTop: "5%" }}
             >
-              <div className={`${css.title}`}>
+              <div className="root cert-title">
                 <b>Transcript</b>
               </div>
-              <table className={`w-100 ${css.transcript}`}>
+              <table className="w-100 transcript">
                 <tbody>
                   <tr>
                     <th>Course Code</th>
@@ -214,7 +214,7 @@ class Template extends Component {
                 )}
               />
               <hr className="m-1" />
-              <div className={`${css.transcript}`}>
+              <div className="transcript">
                 <b>{get(document, "additionalData.certSignatories[0].name")}</b>
                 <br />
                 {get(

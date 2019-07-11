@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import styles from "../certificateViewer.scss";
 import connectToParent from "penpal/lib/connectToParent";
 import DocumentViewer from "./documentViewer";
 import { documentTemplateTabs, inIframe } from "./utils";
@@ -10,10 +10,10 @@ class DocumentViewerContainer extends Component {
     super(props);
 
     this.handleDocumentChange = this.handleDocumentChange.bind(this);
-    this.handleTextFieldChange = this.handleTextFieldChange.bind(this);
     this.selectTemplateTab = this.selectTemplateTab.bind(this);
     this.updateParentHeight = this.updateParentHeight.bind(this);
     this.updateParentTemplateTabs = this.updateParentTemplateTabs.bind(this);
+    this.obfuscateDocument = this.obfuscateDocument.bind(this);
     this.state = {
       parentFrameConnection: null,
       document: null,
@@ -45,6 +45,16 @@ class DocumentViewerContainer extends Component {
     }
   }
 
+  async obfuscateDocument(field) {
+    if (inIframe()) {
+      const { parentFrameConnection } = this.state;
+      const parent = await parentFrameConnection;
+      if (parent.updateCertificate) {
+        parent.updateCertificate(field);
+      }
+    }
+  }
+
   async selectTemplateTab(tabIndex) {
     if (inIframe()) {
       const { parentFrameConnection } = this.state;
@@ -60,22 +70,7 @@ class DocumentViewerContainer extends Component {
     this.setState({ document });
   }
 
-  handleTextFieldChange(e) {
-    const fieldContents = JSON.parse(e.target.value);
-    trace(fieldContents);
-    const validated = validateSchema(fieldContents);
-    if (!validated) {
-      throw new Error(
-        "Certificate string does not conform to OpenCerts schema"
-      );
-    }
-    const verified = verifySignature(fieldContents);
-    trace(`Certificate verification: ${verified}`);
-    this.obfuscateDocument(fieldContents);
-  }
-
   componentDidUpdate() {
-    this.updateParentTemplateTabs();
     this.updateParentHeight();
   }
 
@@ -101,21 +96,21 @@ class DocumentViewerContainer extends Component {
   }
 
   render() {
+    console.log(styles);
     if (!this.state.document) {
-      return (
-        <input
-          id="certificateContentsString"
-          type="hidden"
-          onChange={this.handleTextFieldChange}
-        />
-      );
+      return null;
     }
     return (
-      <DocumentViewer
-        document={this.state.document}
-        tabIndex={this.state.tabIndex}
-        handleHeightUpdate={this.updateParentHeight}
-      />
+      <div className="frameless-tabs" id="rendered-certificate">
+        <DocumentViewer
+          id={styles["frameless-container"]}
+          document={this.state.document}
+          tabIndex={this.state.tabIndex}
+          handleHeightUpdate={this.updateParentHeight}
+          updateParentTemplates={this.updateParentTemplateTabs}
+          obfuscateDocument={this.obfuscateDocument}
+        />
+      </div>
     );
   }
 }
