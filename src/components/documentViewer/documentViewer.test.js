@@ -23,13 +23,11 @@ it("renders the right template depending on the tabIndex", () => {
     <DocumentViewer
       document={document}
       handleHeightUpdate={mockUpdateParentHeight}
-      updateParentTemplates={mockUpdateParentTemplates}
       tabIndex={0}
     />
   );
   // componentDidMount functions should be called
   expect(mockUpdateParentHeight).toHaveBeenCalled();
-  expect(mockUpdateParentTemplates).toHaveBeenCalled();
 
   // Check content from tab 1
   expect(component.find("#content").text()).toBe("bar");

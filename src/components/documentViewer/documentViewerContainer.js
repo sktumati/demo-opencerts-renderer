@@ -36,14 +36,16 @@ class DocumentViewerContainer extends Component {
   }
 
   // Use postMessage to update iframe's parent onw the selection of templates available for this document
-  async updateParentTemplateTabs(templates) {
+  async updateParentTemplateTabs() {
     if (inIframe()) {
       const { parentFrameConnection } = this.state;
       const parent = await parentFrameConnection;
-      if (parent.updateTemplates)
-        await parent.updateTemplates(documentTemplateTabs(templates));
+      if (parent.updateTemplates) {
+        const templates = await documentTemplateTabs(this.state.document);
+        await parent.updateTemplates(templates);
+        this.setState({ templates });
+      }
     }
-    this.setState({ templates });
   }
 
   async handleObfuscation(field) {
@@ -62,6 +64,7 @@ class DocumentViewerContainer extends Component {
 
   handleDocumentChange(document) {
     this.setState({ document });
+    this.updateParentTemplateTabs();
   }
 
   getTemplates() {

@@ -34,9 +34,9 @@ test("Govtech Demo certificate is rendered correctly", async t => {
   await t
     .expect(templates)
     .eql([
-      { id: "certificate", label: "Certificate", template: undefined },
-      { id: "transcript", label: "Transcript", template: undefined },
-      { id: "media", label: "Media", template: undefined }
+      { id: "certificate", label: "Certificate" },
+      { id: "transcript", label: "Transcript" },
+      { id: "media", label: "Media" }
     ]);
 
   // Validate content of first tab

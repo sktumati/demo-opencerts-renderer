@@ -1,35 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { documentTemplates } from "./utils";
 
-class DocumentViewer extends Component {
-  componentDidMount() {
-    const { updateParentTemplates, document, handleHeightUpdate } = this.props;
-    const templates = documentTemplates(document, handleHeightUpdate);
-    handleHeightUpdate();
-    updateParentTemplates(templates);
-  }
-  render() {
-    const {
-      tabIndex,
-      document,
-      handleHeightUpdate,
-      handleObfuscation
-    } = this.props;
-    const templates = documentTemplates(document, handleHeightUpdate);
-    const Template = templates[tabIndex].template;
+const DocumentViewer = props => {
+  const { tabIndex, document, handleHeightUpdate, handleObfuscation } = props;
+  const templates = documentTemplates(document, handleHeightUpdate);
+  const Template = templates[tabIndex].template;
+  handleHeightUpdate();
 
-    return (
-      <Template document={document} handleObfuscation={handleObfuscation} />
-    );
-  }
-}
+  return <Template document={document} handleObfuscation={handleObfuscation} />;
+};
 
 DocumentViewer.propTypes = {
   document: PropTypes.object.isRequired,
   tabIndex: PropTypes.number,
   handleHeightUpdate: PropTypes.func.isRequired,
-  updateParentTemplates: PropTypes.func,
   handleObfuscation: PropTypes.func
 };
 
