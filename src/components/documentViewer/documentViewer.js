@@ -14,13 +14,13 @@ class DocumentViewer extends Component {
       tabIndex,
       document,
       handleHeightUpdate,
-      obfuscateDocument
+      handleObfuscation
     } = this.props;
     const templates = documentTemplates(document, handleHeightUpdate);
     const Template = templates[tabIndex].template;
 
     return (
-      <Template document={document} handleObfuscation={obfuscateDocument} />
+      <Template document={document} handleObfuscation={handleObfuscation} />
     );
   }
 }
@@ -30,7 +30,7 @@ DocumentViewer.propTypes = {
   tabIndex: PropTypes.number,
   handleHeightUpdate: PropTypes.func.isRequired,
   updateParentTemplates: PropTypes.func,
-  obfuscateDocument: PropTypes.func
+  handleObfuscation: PropTypes.func
 };
 
 export default DocumentViewer;
