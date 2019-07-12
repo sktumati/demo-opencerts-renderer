@@ -109,7 +109,6 @@ class DocumentViewerContainer extends Component {
           document={this.state.document}
           tabIndex={this.state.tabIndex}
           handleHeightUpdate={this.updateParentHeight}
-          updateParentTemplates={this.updateParentTemplateTabs}
           handleObfuscation={this.handleObfuscation}
         />
       </div>
