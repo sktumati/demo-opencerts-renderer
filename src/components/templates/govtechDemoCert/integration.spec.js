@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import { getData } from "@govtechsg/open-attestation";
 
-fixture("Frameless Viewer").page`http://localhost:3000/`;
+fixture("Frameless Viewer").page`http://localhost:3001/`;
 
 const Certificate = "./Ropsten-Demo.json";
 const RenderedCertificate = Selector("#rendered-certificate");
