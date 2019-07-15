@@ -1,11 +1,10 @@
 import { Selector } from "testcafe";
 import { readFileSync } from "fs";
 import { join } from "path";
-import { getData } from "@govtechsg/open-attestation";
 
-fixture("Frameless Viewer").page`http://localhost:3001/`;
+fixture("Frameless Viewer").page`http://localhost:3000/`;
 
-const Certificate = "./Ropsten-Demo.json";
+const Certificate = "./Ropsten-Demo-unwrapped.json";
 const RenderedCertificate = Selector("#rendered-certificate");
 
 const Media = Selector("#youtube-vid");
@@ -18,8 +17,8 @@ const validateTextContent = async (t, component, texts) =>
 
 test("Govtech Demo certificate is rendered correctly", async t => {
   // Inject javascript and execute window.openAttestation.renderDocument
-  const certificateContent = getData(
-    JSON.parse(readFileSync(join(__dirname, Certificate)).toString())
+  const certificateContent = JSON.parse(
+    readFileSync(join(__dirname, Certificate)).toString()
   );
   await t.eval(
     () => window.openAttestation.renderDocument(certificateContent),

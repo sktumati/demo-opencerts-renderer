@@ -8,7 +8,6 @@ jest.mock("./utils", () => ({
 }));
 
 const mockUpdateParentHeight = jest.fn();
-const mockUpdateParentTemplates = jest.fn();
 
 it("renders the right template depending on the tabIndex", () => {
   /* eslint-disable */
@@ -26,8 +25,6 @@ it("renders the right template depending on the tabIndex", () => {
       tabIndex={0}
     />
   );
-  // componentDidMount functions should be called
-  expect(mockUpdateParentHeight).toHaveBeenCalled();
 
   // Check content from tab 1
   expect(component.find("#content").text()).toBe("bar");
