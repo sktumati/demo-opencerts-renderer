@@ -10,6 +10,6 @@ jobs:
       script:
         - npm run lint
         - npm run test-coverage
-        - ./scripts/sonar-runner.sh
+        - ./scripts/integration-headless.sh
 stages:
   - test
