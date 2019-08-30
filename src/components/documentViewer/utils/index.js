@@ -1,8 +1,11 @@
-import templateRegistry from "../../templates";
 import { get } from "lodash";
 import attachmentToTemplates from "../../attachmentTemplates";
 
-export const documentTemplates = (document, handleHeightUpdate) => {
+export const documentTemplates = (
+  document,
+  handleHeightUpdate,
+  templateRegistry
+) => {
   if (!document) return [];
   // Find the template in the template registry or use a default template
   const templateName = get(document, "$template.name");
@@ -18,8 +21,8 @@ export const documentTemplates = (document, handleHeightUpdate) => {
   return [...selectedTemplate, ...templatesFromAttachments];
 };
 
-export const documentTemplateTabs = document => {
-  const templates = documentTemplates(document);
+export const documentTemplateTabs = (document, templateRegistry) => {
+  const templates = documentTemplates(document, () => void 0, templateRegistry);
   return templates.map(template => ({
     id: template.id,
     label: template.label

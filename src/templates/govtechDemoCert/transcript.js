@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { get } from "lodash";
 import PropTypes from "prop-types";
-import SimplePrivacyFilterBanner from "../../TemplateCommon/Privacy/SimplePrivacyFilterBanner";
-import ObfuscatableValue from "../../TemplateCommon/Privacy/ObfuscatableValue";
+import SimplePrivacyFilterBanner from "../../components/TemplateCommon/Privacy/SimplePrivacyFilterBanner";
+import ObfuscatableValue from "../../components/TemplateCommon/Privacy/ObfuscatableValue";
 import { formatDate } from "./common/functions";
 import { transcriptBg } from "./common/backgrounds";
 import "./common/demoStyles.scss";

@@ -3,6 +3,7 @@ import styles from "../certificateViewer.scss";
 import connectToParent from "penpal/lib/connectToParent";
 import DocumentViewer from "./documentViewer";
 import { documentTemplateTabs, inIframe } from "./utils";
+import PropTypes from "prop-types";
 
 class DocumentViewerContainer extends Component {
   constructor(props) {
@@ -37,13 +38,18 @@ class DocumentViewerContainer extends Component {
 
   // Use postMessage to update iframe's parent onw the selection of templates available for this document
   async updateParentTemplateTabs() {
-    const templates = await documentTemplateTabs(this.state.document);
+    const templates = await documentTemplateTabs(
+      this.state.document,
+      this.props.templateRegistry
+    );
     this.setState({ templates });
     if (inIframe()) {
       const { parentFrameConnection } = this.state;
       const parent = await parentFrameConnection;
       if (parent.updateTemplates) {
-        await parent.updateTemplates(documentTemplateTabs(this.state.document));
+        await parent.updateTemplates(
+          documentTemplateTabs(this.state.document, this.props.templateRegistry)
+        );
       }
     }
   }
@@ -106,9 +112,14 @@ class DocumentViewerContainer extends Component {
           tabIndex={this.state.tabIndex}
           handleHeightUpdate={this.updateParentHeight}
           handleObfuscation={this.handleObfuscation}
+          templateRegistry={this.props.templateRegistry}
         />
       </div>
     );
   }
 }
+
+DocumentViewerContainer.propTypes = {
+  templateRegistry: PropTypes.object
+};
 export default DocumentViewerContainer;
