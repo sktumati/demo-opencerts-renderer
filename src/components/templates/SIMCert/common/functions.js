@@ -1,5 +1,5 @@
 import { tz } from "moment-timezone";
-import { toWordsOrdinal, toWords } from "number-to-words";
+
 
 export const TIMEZONE = "Asia/Singapore";
 
@@ -33,7 +33,7 @@ export const formatDate = dateString => {
   const year = Number(tz(date, TIMEZONE).format("YYYY"));
 
   // use number-to-word, convert to words
-  let yearStr = toWords(year);
+  //let yearStr = toWords(year);
 
   // change - begin with UpperCase, place commas with 'and'
   yearStr = yearStr.replace(",", " and");
@@ -62,7 +62,7 @@ export const formatDatePrefix = dateString => {
   const day = Number(tz(date, TIMEZONE).format("D"));
 
   // use number-to-words, toWordsOrdinal - output first, second etc.
-  const strDay = toWordsOrdinal(day);
+  //const strDay = toWordsOrdinal(day);
 
   // eg first day of
   return <span>{strDay} day of</span>;
