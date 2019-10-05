@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { get } from "lodash";
 import {
   IMG_LOGO_RP,
@@ -386,3 +387,8 @@ export const renderFooter = certificate => (
     </div>
   </div>
 );
+
+export default Template;
+Template.propTypes = {
+  document: PropTypes.object.isRequired
+};
