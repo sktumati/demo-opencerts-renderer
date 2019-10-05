@@ -7,12 +7,12 @@
 import DefaultTemplate from "./default";
 import CustomTemplate from "./customTemplate";
 import GovTechDemoCert from "./govtechDemoCert";
-import GovTechDemoCert from "./sim";
+import SIMCert from "./sim";
 
 export default {
   default: DefaultTemplate,
   CUSTOM_TEMPLATE: CustomTemplate,
   GOVTECH_DEMO: GovTechDemoCert,
-  SIM_TEMPLATE: CustomTemplate,
+  SIM_TEMPLATE: SIMCert,
   NULL: []
 };
