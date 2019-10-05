@@ -1,7 +1,17 @@
-export * from "./images";
+import SIMCert from "./certificate";
+import SIMTranscript from "./transcript";
 
-export const approvedAddresses = [
-  "0x061aFcFF60b90E0F633F8ef157e01BaB9b2FfDD3",
-  "0x18270bA6dA0380a2cbC705bc6C0AD6651282bD14",
-  "0x6712aA4D408D014448cC38545c4b0E0Df4b7cFEf"
+const templates = [
+  {
+    id: "certificate",
+    label: "Certificate",
+    template: SIMCert
+  },
+  {
+    id: "transcript",
+    label: "Transcript",
+    template: SIMTranscript
+  }
 ];
+
+export default templates;
