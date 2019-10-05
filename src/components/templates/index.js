@@ -7,7 +7,7 @@
 import DefaultTemplate from "./default";
 import CustomTemplate from "./customTemplate";
 import GovTechDemoCert from "./govtechDemoCert";
-import SIMCert from "./sim";
+import SIMCert from "./SIMCert";
 
 export default {
   default: DefaultTemplate,
