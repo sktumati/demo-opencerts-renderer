@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import React from "react";
 import { get, groupBy } from "lodash";
 import { IMG_LOGO_RP_HORIZONTAL,
           IMG_LOGO_SIM_BACKGRND_CERT,
