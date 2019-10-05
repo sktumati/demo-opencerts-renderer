@@ -390,8 +390,7 @@ export const renderFooter = certificate => (
 );
 
 
-certificate.propTypes = {
-  document: PropTypes.object.isRequired
+Template.propTypes = {
+  certificate: PropTypes.object.isRequired
 };
-
-export default certificate;
+export default Template;
