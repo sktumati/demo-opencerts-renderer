@@ -8,7 +8,7 @@ import {
   renderAwardText,
   renderTwoSignatures,
   renderFooter
-} from "../common/certificate";
+} from "./common/certificate";
 
 const Template = ({ certificate }) => (
   <div>
