@@ -18,7 +18,7 @@ export const formatDDMMMYYYY = dateString => {
   if (!dateString) return null;
   const date = new Date(dateString);
 
-  return tz(date, TIMEZONE).format("D MMM YYYY");
+  return tz(date, TIMEZONE).format("D-MMM-YYYY");
 };
 
 export const formatDDMONYYYY = dateString => {
