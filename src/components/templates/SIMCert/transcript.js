@@ -2,19 +2,23 @@ import PropTypes from "prop-types";
 import React from "react";
 import { get, groupBy } from "lodash";
 import { IMG_LOGO_RP_HORIZONTAL,
-          IMG_LOGO_SIM_BACKGRND_CERT,
+         IMG_LOGO_SIM_BACKGRND_CERT,
          IMG_LOGO_SIM } from "./images";
 
 import {
   formatDDMMMYYYY,
-  formatDDMONYYYY,
+  formatDDMONYYYY, 
   formatBold,
   formatSignatoriesPosition
 } from "./functions";
 
 export const fullWidthStyle = {
-  width: "100%",
+  width: "80%",
   height: "auto"
+};
+
+export const linestyle01 = {
+  width: "100%",
 };
 
 export const fullTableWidthStyle = {
@@ -72,7 +76,7 @@ export const printTextStyleFooter = {
   fontFamily: "TimesNewRoman",
   fontWeight: "500!important",
   fontSize: "1.2rem",
-  color: "#b37707",
+  color: "black",
   textAlign: "center",
   marginTop: "0rem", 
   marginBottom: "2rem"
@@ -85,7 +89,6 @@ export const SIMprintTextStyle_TNR01 = {
   color: "black",
   textAlign: "center",
   fontWeight: "bold"
-  
 };
 
 export const SIMprintTextStyle_TNR02 = {
@@ -115,10 +118,9 @@ export const arial10Pt = {
 
 const borderImgStyle = {
   border: "1px solid transparent",
-  borderColor: "black",
+  borderColor: "white",
   backgroundRepeat: "no-repeat",
   backgroundImage: `url(${IMG_LOGO_SIM_BACKGRND_CERT})`
-
 };
 
 export const renderHeader = () => (
@@ -130,7 +132,6 @@ export const renderHeader = () => (
 	<div className="col-2" />
   </div>
 );
-
 
 export const renderHeaderText01 = () => (
  <div>
@@ -147,14 +148,12 @@ export const renderHeaderText05 = () => (
  <div>
     <div className="row d-flex justify-content-center" style={{ marginTop: "1rem" }} />
      <div className="row d-flex justify-content-center" style={{marginBottom: "1rem" }}>
-      <div style={SIMprintTextStyle_TNR01} >OFFICIAL TRANSCRIPT
-	  <div className="row d-flex justify-content-center">
-	  <span style={arial10Pt}>
-        ___________________________________________________________________________________________________________________________
-      </span>
+      <div style={SIMprintTextStyle_TNR01} >OFFICIAL TRANSCRIPT <div className="row d-flex justify-content-center">
 	  </div>
       </div>
-     </div>		
+
+     </div>	
+	  	  	  <hr />	 
  </div>
 );
 
@@ -183,26 +182,21 @@ export const renderHeaderText03 = () => (
 
 
 export const renderHeaderText04 = certificate => (
- <div>
+ <div> 	   
     <div className="row d-flex justify-content-left" style={{ marginTop: "0.8rem" }} />
      <div className="row d-flex justify-content-left" style={{ marginLeft: "0.25rem"}}>
-              AWARDED THE: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {formatBold(certificate.name)} 
-		<br/>
-		<div>  	
-
-	  <span style={arial10Pt}>
-        _____________________________________________________________________________________________________________________________
-      </span>
-		
+	 AWARDED THE: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {formatBold(certificate.name)} 
+	 <br/> 
+	 <hr />
+	 </div> 
+	 <div> <hr style={linestyle01} /> </div>
+	 <div>  
 		<div className="col-0"> </div>
-		<div className="col-12 text-center">
-
-
-		<strong>----{" "}END OF RECORDS----{" "}</strong>
-				
-         </div>
-		</div>
-      </div>	
+		<div className="col-12 text-center" style={{ marginTop: "-1rem", marginBottom: "-1rem" }}>
+		<strong>----{" "}END OF RECORDS----{" "}</strong>	
+	
+        </div>
+      </div>	    <br />	
  </div>
 );
 
@@ -213,8 +207,6 @@ export const renderHeaderText06 = () => (
         </div>   
     </div> 			
 );
-
-
 
 
 // additional remarks for PET only
@@ -229,7 +221,6 @@ export const renderRemarksGradingSystem = isNOTDPLUS => (
 );
 
 export const renderTableHeader = () => (
-
   <tr>
     <th style={{ border: "1px solid", width: "10%", backgroundColor: "#e7f3fd", paddingLeft: "10px" }}>Grade</th>
     <th style={{ border: "1px solid", width: "10%", backgroundColor: "#e7f3fd", paddingLeft: "10px" }}>Grade Points</th>
@@ -259,47 +250,47 @@ export const renderGradingSystem = certificate => {
   const isNOTDPLUS = strTemplate.substr(15, 4) === "C-DP" ? 0 : 1;
 
   const listGradeText1L = [
-    { grade: "A+", score: "4.0", marks: "90 to 100", desc: "Distinction" },
-	{ grade: "A", score: "4.0", marks: "80 to 89", desc: "Excellent" },
-    { grade: "B+", score: "3.5", marks: "75 to 79", desc: "Very Good" },
-    { grade: "B", score: "3.0", marks: "70 to 74", desc: "Very Good" },
-    { grade: "C+", score: "2.5", marks: "65 to 69", desc: "Good" },
-    { grade: "C", score: "2.0", marks: "60 to 64", desc: "Good" },
-    { grade: "D+", score: "1.5", marks: "55 to 59", desc: "Pass" },
-    { grade: "D", score: "1.0", marks: "50 to 54", desc: "Pass" } ,
-    { grade: "F", score: "0.0", marks: "0 to 49", desc: "Fail" } ,
-	{ grade: "ABS", score: "0.0", marks: "  -  ", desc: "Absent" } ,
-    { grade: "T", score: "0.0", marks: "  -  ", desc: "Exempted" }
+    { grade: "A+",  score: "4.000", marks: "90 to 100", desc: "Distinction" },
+	{ grade: "A",   score: "4.000", marks: "80 to 89",  desc: "Excellent" },
+    { grade: "B+",  score: "3.500", marks: "75 to 79",  desc: "Very Good" },
+    { grade: "B",   score: "3.000", marks: "70 to 74",  desc: "Very Good" },
+    { grade: "C+",  score: "2.500", marks: "65 to 69",  desc: "Good" },
+    { grade: "C",   score: "2.000", marks: "60 to 64",  desc: "Good" },
+    { grade: "D+",  score: "1.500", marks: "55 to 59",  desc: "Pass" },
+    { grade: "D",   score: "1.000", marks: "50 to 54",  desc: "Pass" } ,
+    { grade: "F",   score: "0.000", marks: "0 to 49",   desc: "Fail" } ,
+	{ grade: "ABS", score: "0.000", marks: "  -  ",     desc: "Absent" } ,
+    { grade: "T",   score: "0.000", marks: "  -  ",     desc: "Exempted" }
 	
   ];
 
   const listGradeText1R = [
-    { grade: "E", score: "0.5", desc: "Fail" },
-    { grade: "F", score: "0.0", desc: "Fail" },
-    { grade: "P", score: "2.0", desc: "Pass" },
-    { grade: "N", score: "-", desc: "Null(Defaulted)" },
-    { grade: "Pass*", score: "-", desc: "Pass with Commendation" },
-    { grade: "Pass", score: "-", desc: "Pass" },
-    { grade: "Fail", score: "-", desc: "Fail" }
+    { grade: "E", 		score: "0.5", 	desc: "Fail" },
+    { grade: "F", 		score: "0.0", 	desc: "Fail" },
+    { grade: "P", 		score: "2.0", 	desc: "Pass" },
+    { grade: "N", 		score: "-", 	desc: "Null(Defaulted)" },
+    { grade: "Pass*", 	score: "-", 	desc: "Pass with Commendation" },
+    { grade: "Pass", 	score: "-", 	desc: "Pass" },
+    { grade: "Fail",  	score: "-", 	desc: "Fail" }
   ];
 
   const listGradeText2L = [
-    { grade: "DIST", score: "4.0", desc: "Distinction^" },
-    { grade: "A", score: "4.0", desc: "Excellent" },
-    { grade: "B+", score: "3.5", desc: "Very Good" },
-    { grade: "B", score: "3.0", desc: "Very Good" },
-    { grade: "C+", score: "2.5", desc: "Good" },
-    { grade: "C", score: "2.0", desc: "Good" },
-    { grade: "D+", score: "1.5", desc: "Pass" }
+    { grade: "DIST", 	score: "4.0", 	desc: "Distinction^" },
+    { grade: "A", 		score: "4.0", 	desc: "Excellent" },
+    { grade: "B+", 		score: "3.5", 	desc: "Very Good" },
+    { grade: "B", 		score: "3.0", 	desc: "Very Good" },
+    { grade: "C+", 		score: "2.5", 	desc: "Good" },
+    { grade: "C", 		score: "2.0", 	desc: "Good" },
+    { grade: "D+", 		score: "1.5",	desc: "Pass" }
   ];
 
   const listGradeText2R = [
-    { grade: "D", score: "1.0", desc: "Pass" },
-    { grade: "F", score: "0.0", desc: "Fail" },
-    { grade: "Pass*", score: "-", desc: "Pass with Commendation" },
-    { grade: "Pass", score: "-", desc: "Pass" },
-    { grade: "Fail", score: "-", desc: "Fail" },
-    { grade: "Exempted", score: "-", desc: "Exempted from taking the module" }
+    { grade: "D", 			score: "1.0", 	desc: "Pass" },
+    { grade: "F", 			score: "0.0", 	desc: "Fail" },
+    { grade: "Pass*", 		score: "-", 	desc: "Pass with Commendation" },
+    { grade: "Pass", 		score: "-", 	desc: "Pass" },
+    { grade: "Fail", 		score: "-", 	desc: "Fail" },
+    { grade: "Exempted", 	score: "-", 	desc: "Exempted from taking the module" }
   ];
 
   // if PET or DPLUS, display grading system otherwise do not display
@@ -328,33 +319,23 @@ export const renderCourse = (certificate, course) => {
   // Get student info and course description
   const recipientName = get(certificate, "recipient.name");
   const recipientNric = get(certificate, "recipient.nric");
-  const recipientFin = get(certificate, "recipient.fin");
-  
-  const DOB = get(certificate, "recipient.Birthdate");  
-      
+  const recipientFin = get(certificate, "recipient.fin");  
+  const DOB = get(certificate, "recipient.Birthdate");        
   const recipientNricFin = !recipientNric ? recipientFin : recipientNric;
   const studentId = get(certificate, "recipient.studentId");
   const admissionDate = get(certificate, "additionalData.admissionDate");
   const graduationDate = get(certificate, "additionalData.graduationDate");
-
   const graduationStatus = get(certificate, "recipient.Status");  
-
-  const strTemplate = get(certificate, "$template");
-  
+  const strTemplate = get(certificate, "$template");  
   const isCET = strTemplate.substr(15, 6) === "P-MAIN" ? 0 : 1;
 
   // Group all modules by semesters
   const groupedSubjects = groupBy(course, "semester");
-
   const renderedSemesters = Object.keys(groupedSubjects).map(semester =>
     groupedSubjects[semester].map((s, i) => (
       <tr key={i}>
-        <td style={{ textAlign: "left" }}> {s.semester === "-" ? null : s.semester.toString()}
-        </td>
-
-        <td style={{ textAlign: "left" }}> {s.courseCode !== "ZZZ" || s.semester === "-" ? s.name : formatBold(s.name)}
-        </td>
-
+        <td style={{ textAlign: "left" }}> {s.semester === "-" ? null : s.semester.toString()} </td>
+        <td style={{ textAlign: "left" }}> {s.courseCode !== "ZZZ" || s.semester === "-" ? s.name : formatBold(s.name)} </td>
         <td style={{ textAlign: "left" }}> {s.courseCode !== "ZZZ" ? s.grade.padEnd(2, " ") : ""}&nbsp;</td>
       </tr>
     ))
@@ -362,21 +343,18 @@ export const renderCourse = (certificate, course) => {
 
   return (
     <div>      
-
       <div className="row">
         <div className="col">
           <div className="row">
             <div className="col-2"><strong>Name</strong></div>
             <div className="col-10">
-              <strong>:&nbsp;&nbsp;
-              {recipientName}</strong>
+            <strong>:&nbsp;&nbsp;{recipientName}</strong>
             </div>
           </div>
           <div className="row">
             <div className="col-2"><strong>Course</strong></div>
             <div className="col-10">
-              <strong>:&nbsp;&nbsp;
-              {certificate.name}</strong>
+            <strong>:&nbsp;&nbsp;{certificate.name}</strong>
             </div>
           </div>
 	  
@@ -384,10 +362,9 @@ export const renderCourse = (certificate, course) => {
             <div className="col-2"><strong>StudentID</strong></div>
             <div className="col-4"> <strong>:&nbsp;&nbsp; {studentId || certificate.additionalData.studentId} </strong></div>
             <div className="col-2 justify-content-left" style={{ textAlign: "left" }} >
-              <strong>NRIC no./FIN</strong></div>
-
-            <div className="col-2 justify-content-right" style={{ textAlign: "right" }} >&nbsp;
-             <strong>:&nbsp;&nbsp;&nbsp;{recipientNricFin}</strong>
+            <strong>NRIC no./FIN</strong></div>
+            <div className="col-2 justify-content-right" style={{ textAlign: "left" }} >&nbsp;
+            <strong>:&nbsp;&nbsp;&nbsp;{recipientNricFin}</strong>
             </div>
           </div>
 
@@ -396,36 +373,27 @@ export const renderCourse = (certificate, course) => {
             <div className="col-2"><strong>Date of Admission</strong></div>
             <div className="col-4"> <strong>:&nbsp;&nbsp; {formatDDMMMYYYY(admissionDate)} &nbsp;</strong></div>
             <div className="col-2 justify-content-left" style={{ textAlign: "left" }} >
-              <strong>Date of Birth</strong>
-            </div>
-            <div className="col-2 justify-content-right" style={{ textAlign: "right" }} >&nbsp;
-             <strong> :&nbsp;{formatDDMMMYYYY(DOB)}&nbsp;</strong>
+            <strong>Date of Birth</strong></div>
+            <div className="col-2 justify-content-right" style={{ textAlign: "left" }} >&nbsp;
+            <strong>:&nbsp;&nbsp;&nbsp;{formatDDMMMYYYY(DOB)}</strong>
             </div>
           </div>
 		  
           <div className="row">
             <div className="col-2"><strong>Status</strong></div>
-            <div className="col-4"> <strong>:</strong>&nbsp;&nbsp;<strong>Completed Program</strong> </div>
+            <div className="col-4"> <strong>:</strong>&nbsp;&nbsp;<strong>Completed Program</strong></div>
             <div className="col-2 justify-content-left" style={{ textAlign: "left" }} >
-              <strong>Page&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-            </div>
-            <div className="col-2 justify-content-right" style={{ textAlign: "right" }} >
-            <strong> &nbsp; &nbsp;: 1 of 1 </strong>
+            <strong>Page</strong></div>
+            <div className="col-2 justify-content-right" style={{ textAlign: "left" }} >&nbsp;
+            <strong>:&nbsp;&nbsp;&nbsp;1 of 1 </strong>
             </div>			
           </div>
-          <div className="row">      <br /> </div>	  
+          <div className="row">  </div>	     
         </div>
       </div>
-	  
-	  <div className="row d-flex justify-content-center">
-	  <span style={arial10Pt}>
-        <strong>____________________________________________________________________________________________________________________________</strong>
-      </span>
-	  </div>	  
-      <div className="row">      <br /> </div>	  
-	  
-      <div className="row">
-        <div className="col text-center">
+	
+      <div className="row" style={{ marginTop: "-1rem", marginBottom: "-1rem" }}>
+        <div className="col text-center"><hr />
           <table style={fullWidthStyle}>
             <tbody>
               <tr>
@@ -438,7 +406,8 @@ export const renderCourse = (certificate, course) => {
           </table>
         </div>
       </div>
-      <br />
+   <br /> 
+    
     </div>
 	
   );
@@ -449,7 +418,6 @@ export const renderTranscript = certificate => {
   const transcript = get(certificate, "transcript");
   // const groupedCourses = groupBy(transcript, "semester");
   const renderedCourses = renderCourse(certificate, transcript);
-
   return <div>{renderedCourses}</div>;
 };
 
@@ -475,17 +443,16 @@ export const renderGPA = certificate => {
       <div className="col-0"> </div>
       <div className="col-0-12" >
         {formatBold(renderPETGPA(GPA))}
+		<br /> 
+		Successfully completed all course requirements 
 		<br />
-		Successfully completed all course requirements			
-		<br />
-		<br />		
-        AWARDED THE &nbsp;&nbsp;&nbsp;&nbsp;{formatBold(certificate.name)} {formatBold(WithMeritTag)}
+		<br /> 
+		AWARDED THE &nbsp;&nbsp;&nbsp;&nbsp;{formatBold(certificate.name)} {formatBold(WithMeritTag)}
         <br />
       </div>
       <div className="col-0"> </div>
-
       <div className="col-12 text-center">
-	  	        <hr style={{ borderWidths: "2rem" }} />
+	  	<hr style={{ borderWidths: "2rem" }} />
         ----{" "}
         <strong>END OF RECORDS</strong>
         ----{" "}
@@ -499,42 +466,27 @@ export const renderSignature = certificate => {
     certificate.additionalData.transcriptSignatories[0].position
   );
   return (
-
-
-    <div className="row d-flex justify-content-center align-items-end" style={{ marginTop: "2rem", marginBottom: "2rem" }} >
-	
+      <div className="row d-flex justify-content-center align-items-end" style={{ marginTop: "2rem", marginBottom: "2rem" }} >
   	  <div className="col-4 text-left" style={{ marginTop: "0rem", marginBottom: "2rem" }} >
-	  Date Printed:  <strong>{formatDDMMMYYYY(certificate.issuedOn)}</strong>
+			Date Printed:  <strong>{formatDDMMMYYYY(certificate.issuedOn)}</strong>
 	  </div>
-	
-      <div className="col-4" />	
-	  
-      <div className="col-4">
-        <div className="px-4">
-          <img
-            style={fullWidthStyle}
-            src={certificate.additionalData.transcriptSignatories[0].signature}
-          />
-	<span style={arial10Pt}>
-        <strong>__________________________________</strong>
-    </span>
-	  
-        </div>
-        <div className="text-center">
+	  <div className="col-4" />	
+	  <div className="col-4">
+      <div className="px-4">
+         <img style={fullWidthStyle} src={certificate.additionalData.transcriptSignatories[0].signature} />
+	     <span style={arial10Pt}>
+			<strong>__________________________________</strong>
+         </span>
+      </div>
+      <div className="text-center">
           <span style={signatureTextStyle}>{certSign[0]}</span>
           <br />
-          <span style={signatureTextStyle}>{certSign.length > 0 ? certSign[1] : null}</span>
-          <br />
-          <br />
           <br />
 
         </div>
-      </div>
+        </div>
 
-      <div className="col-2" />
-
-    </div>	  
-		
+        </div>	  		
   );
 };
 
@@ -543,10 +495,8 @@ export const renderFooterText = () => (
         <div className="text-center" style={ printTextStyleFooter } >
             <div className="printTextStyleFooter"><strong>461 Clementi Road, Singapore 599491 Website: www.sim.edu.sg</strong></div>   
 	    </div>			
-  
     </div> 			
 );
-
 
 const Template = ({ certificate }) => (
   <div className="container" style={ borderImgStyle }>
@@ -555,7 +505,6 @@ const Template = ({ certificate }) => (
 	{renderHeaderText05()}
     {renderTranscript(certificate)}
 	{renderHeaderText02(certificate)}
-
 	{renderHeaderText03(certificate)}
 	{renderHeaderText04(certificate)}
 	{renderHeaderText06()}
