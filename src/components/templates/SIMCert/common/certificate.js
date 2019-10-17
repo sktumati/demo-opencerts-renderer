@@ -2,7 +2,7 @@ import { get } from "lodash";
 import React from "react";
 import { format } from "date-fns";
 import { tz } from "moment-timezone";
-mport {
+import {
   IMG_CERTIFICATE_SEAL,
   IMG_LOGO_ALLPOLY,
   IMG_LOGO_SUSS,
