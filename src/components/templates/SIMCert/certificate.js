@@ -4,24 +4,20 @@ import { format } from "date-fns";
 import { tz } from "moment-timezone";
 import { get } from "lodash";
 import {
-  renderLogoRP,
+  renderLogoSIM,
   renderAwardText,
   renderTwoSignatures,
-  renderLogoRPPartner,
   renderFooter
-} from "./common/certificate";
+} from "../common/certificate";
 
 const Template = ({ certificate }) => (
   <div>
-    <div
-      className="container"
-      style={{ border: 0, borderColor: "#AAA", borderStyle: "solid" }}
-    >
-      {renderLogoRP()}
+    <div className="container" style={{ border: 0, borderColor: "#AAA", borderStyle: "solid" }}>
+      {renderLogoSIM()}
       {renderAwardText(certificate)}
       {renderTwoSignatures(certificate)}
-      {renderLogoRPPartner(1)}
     </div>
+	
     {renderFooter(certificate)}
   </div>
 );
