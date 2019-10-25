@@ -22,7 +22,8 @@ const Template = ({ certificate }) => (
   </div>
 );
 
+export default Template;
 Template.propTypes = {
   certificate: PropTypes.object.isRequired
 };
-export default Template;
+
