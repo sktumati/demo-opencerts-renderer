@@ -238,7 +238,7 @@ export const renderTwoSignatures = certificate => {
           <img style={logoLStyle} src={get(certificate,"additionalData.certSignatories[0].signature")} />
 		  <span style={arial10Pt}><strong>_______________________________________</strong></span>
 		     <div className="text-center">
-		         <span style={signatureTextStyle}>{certSign[0]}</span>	
+		         <span style={signatureTextStyle}>{get(certificate,"additionalData.certSignatories[0].position"}</span>
              </div>		  
         </div>
       </div>
