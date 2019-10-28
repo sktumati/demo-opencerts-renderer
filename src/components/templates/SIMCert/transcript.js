@@ -244,9 +244,9 @@ export const renderGradeList = listGrade => {
 
 export const renderGradingSystem = document => {
   // get the template name
-  const strTemplate = get(document, "$template");
+ // const strTemplate = get(document, "$template");
   // check it is PET template
-  const isCET = strTemplate.substr(15, 6) === "P-MAIN" ? 0 : 1;
+ // const isCET = strTemplate.substr(15, 6) === "P-MAIN" ? 0 : 1;
 
 
   const listGradeText1L = [
@@ -296,8 +296,8 @@ export const renderCourse = (document, course) => {
   const admissionDate = get(document, "additionalData.admissionDate");
   const graduationDate = get(document, "additionalData.graduationDate");
   const graduationStatus = get(document, "recipient.Status");  
-  const strTemplate = get(document, "$template");  
-  const isCET = strTemplate.substr(15, 6) === "P-MAIN" ? 0 : 1;
+//  const strTemplate = get(document, "$template");  
+//  const isCET = strTemplate.substr(15, 6) === "P-MAIN" ? 0 : 1;
 
   // Group all modules by semesters
   const groupedSubjects = groupBy(course, "semester");
