@@ -313,10 +313,10 @@ const Template = ({ certificate }) => (
   <div>
     <div className="container" style={{ border: 0, borderColor: "#AAA", borderStyle: "solid" }}>
       {renderLogoSIM()}
-       < renderAwardText certificate= {certificate} />
+      {renderAwardText(certificate)}
       {renderTwoSignatures(certificate)}
     </div>
-	{renderFooter(certificate)}
+      {renderFooter(certificate)}
   </div>
 );
 
