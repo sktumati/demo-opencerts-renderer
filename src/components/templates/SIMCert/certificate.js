@@ -8,9 +8,6 @@ import {
   IMG_LOGO_SIM,
   IMG_LOGO_SIM_SIGN 
 } from "./images";
-
-export const TIMEZONE = "Asia/Singapore";
-
 import {
   formatDDMMMYYYY,
   formatDate,
@@ -20,6 +17,7 @@ import {
   formatSignatoriesPosition
 } from "./functions";
 
+export const TIMEZONE = "Asia/Singapore";
 
 export const logoLStyle = {
   textAlign: "left",
