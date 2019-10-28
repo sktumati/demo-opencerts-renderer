@@ -5,7 +5,6 @@ import { tz } from "moment-timezone";
 import {
   IMG_CERTIFICATE_SEAL,
   IMG_LOGO_ALLPOLY,
-  IMG_LOGO_SUSS,
   IMG_LOGO_SIM,
   IMG_LOGO_SIM_SIGN 
 } from "./images";
