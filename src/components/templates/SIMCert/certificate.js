@@ -315,9 +315,9 @@ const Template = ({ certificate }) => (
       {renderLogoSIM()}
       {renderAwardText(certificate)}
 
-      <div>
-      	   <renderTwoSignatures certificate={certificate} />
-      </div>
+
+      {renderTwoSignatures(certificate)}
+ 
 
     </div>
       {renderFooter(certificate)}
