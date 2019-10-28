@@ -367,7 +367,7 @@ export const renderCourse = (document, course) => {
           <table style={fullWidthStyle}>
             <tbody>
               <tr>
-                <th style={{ textAlign: "left" }}>{isCET ? "Year/Month" : "SEMESTER"}</th>
+                <th style={{ textAlign: "left" }}>Year/Month</th>
                 <th style={{ textAlign: "left" }}>Module</th>
                 <th style={{ textAlign: "left" }}>Grade</th>
               </tr>
