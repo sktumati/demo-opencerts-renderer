@@ -204,9 +204,9 @@ export const renderLogoSIM = () => (
 
 
 // Render Signature
-export const renderTwoSignatures = certificate => {
+export const renderTwoSignatures = document => {
   const certSign = formatSignatoriesPosition(
-    get(certificate, "additionalData.certSignatories[0].position")
+    get(document, "additionalData.certSignatories[0].position")
   );
   return (
   <div className="container"> 
@@ -227,10 +227,10 @@ export const renderTwoSignatures = certificate => {
 	  <div className="col-4"> </div>
       <div className="col-4" style={{ marginLeft: "-16rem", marginRight: "-16rem"}}>
         <div className="signature-container">
-          <img style={logoLStyle} src={get(certificate,"additionalData.certSignatories[0].signature")} />
+          <img style={logoLStyle} src={get(document,"additionalData.certSignatories[0].signature")} />
 		  <span style={arial10Pt}><strong>_______________________________________</strong></span>
 		     <div className="text-center">
-		         <span style={signatureTextStyle}>{get(certificate,"additionalData.certSignatories[0].position")}</span>
+		         <span style={signatureTextStyle}>{get(document,"additionalData.certSignatories[0].position")}</span>
              </div>		  
         </div>
       </div>
@@ -249,16 +249,16 @@ export const renderTwoSignatures = certificate => {
   );
 };
 
-export const renderIssuingDate = certificate => (
+export const renderIssuingDate = document => (
   <span>
-    {formatDDMONYYYY(get(certificate, "issuedOn"))}{" "}
+    {formatDDMONYYYY(get(document, "issuedOn"))}{" "}
   </span>
 );
 
 
 
 //Render Award text
-export const renderAwardText = certificate => (
+export const renderAwardText = document => (
   <div>
     <div className="row d-flex justify-content-center" style={{ marginTop: "1rem" }} />
     <div className="row d-flex justify-content-center">
@@ -267,13 +267,13 @@ export const renderAwardText = certificate => (
 	
     <div className="row d-flex justify-content-left" style={{ marginLeft: "16rem" }} >
       <div style={printTextStyle_01}>
-        <p>{get(certificate, "additionalData.description")}</p>
+        <p>{get(document, "additionalData.description")}</p>
       </div>
     </div>	
 	
     <div className="row d-flex justify-content-center" style={{ marginTop: "-1rem", marginLeft: "0rem"  }}>
       <div style={printTextStyle_01}>
-		<p>{get(certificate, "additionalData.description1")}</p>
+		<p>{get(document, "additionalData.description1")}</p>
       </div>
     </div>	
 	
@@ -281,51 +281,51 @@ export const renderAwardText = certificate => (
     <div style={SIMprintTextStyle_TNR05}>&nbsp;</div>	
 	<div style={SIMprintTextStyle_LSR01}>It is hereby certified that</div>
     <div style={SIMprintTextStyle_TNR05}>&nbsp;</div>
-    <p style={SIMprintTextStyle_TNR04}>{get(certificate, "recipient.name")}</p>
+    <p style={SIMprintTextStyle_TNR04}>{get(document, "recipient.name")}</p>
     <div style={SIMprintTextStyle_LSR01} >&nbsp;</div>			
     <div style={SIMprintTextStyle_LSR01} >having attended the prescribed course</div>
     <div style={SIMprintTextStyle_LSR01}>and successfully passed the required  </div>
     <div style={SIMprintTextStyle_LSR01}>examination(s) was awarded the</div>
-	<div style={supportSUSSTextStyle}>{get(certificate, "name")}</div>	
+	<div style={supportSUSSTextStyle}>{get(document, "name")}</div>	
     <div style={printTextStyle}>&nbsp;</div>
 	
     <div className="row d-flex justify-content-left" style={{ marginLeft: "0rem" }} >
 	  <p style={SIMprintTextStyle_LSR01}>on </p>
-      <p style={SIMprintTextStyle_TNR03}>&nbsp; {renderIssuingDate(certificate)}</p>
+      <p style={SIMprintTextStyle_TNR03}>&nbsp; {renderIssuingDate(document)}</p>
     </div>
   </div>
 );
 
 //Render footer 
-export const renderFooter = certificate => (
+export const renderFooter = document => (
   <div className="container">
     <div className="row d-flex justify-content-center">
       <div className="col-6 text-left">&nbsp;</div>
       <div className="col-6 text-right"style={{ marginLeft: "-14rem"}}>
-        {get(certificate, "additionalData.transcriptId")}
+        {get(document, "additionalData.transcriptId")}
       </div>
     </div>
   </div>
 );
 
 
-const Template = ({ certificate }) => (
+const Template = ({ document }) => (
   <div>
     <div className="container" style={{ border: 0, borderColor: "#AAA", borderStyle: "solid" }}>
       {renderLogoSIM()}
-      {renderAwardText(certificate)}
+      {renderAwardText(document)}
 
 
-      {renderTwoSignatures(certificate)}
+      {renderTwoSignatures(document)}
  
 
     </div>
-      {renderFooter(certificate)}
+      {renderFooter(document)}
   </div>
 );
 
 export default Template;
 
 Template.propTypes = {
-  certificate: PropTypes.object.isRequired
+  document: PropTypes.object.isRequired
 };
