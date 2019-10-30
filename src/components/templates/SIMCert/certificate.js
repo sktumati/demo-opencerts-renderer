@@ -304,7 +304,7 @@ export const renderAwardText = document => (
 	
     <div className="row d-flex justify-content-left" style={{ marginLeft: "0rem" }} >
 	  <p style={SIMprintTextStyle_LSR01}>on </p>
-      <p style={SIMprintTextStyle_TNR03}>&nbsp; <strong>{renderIssuingDate(certificate)}</strong></p>
+      <p style={SIMprintTextStyle_TNR03}>&nbsp; <strong>{renderIssuingDate(document)}</strong></p>
     </div>
   </div>
 );
