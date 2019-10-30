@@ -123,11 +123,11 @@ export const SIMprintTextStyle_LSR02 = {
 
 
 export const printTextStyle_01 = {
-  fontFamily: "GarageGothic-Regular",
+  fontFamily: "Niagara Solid",
   fontWeight: "400", 
   fontstyle: "normal",  
-  fontSize: "5.5rem",
-  textAlign: "left"
+  fontSize: "5.0rem",
+  textAlign: "center"	
 };
 
 export const SIMtitleTextStyle_01 = {
